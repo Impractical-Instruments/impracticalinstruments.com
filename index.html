@@ -1,49 +1,37 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Your Company</title>
-  <meta name="description" content="Short, clear one-liner about what you do." />
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <main class="wrap">
-    <header class="hero">
-      <h1>Your Company</h1>
-      <p class="tagline">A crisp one-liner about the value you deliver.</p>
-      <div class="cta">
-        <a class="btn" href="mailto:hello@yourdomain.com">Email us</a>
-        <a class="btn btn-secondary" href="#work">What we do</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Impractical Instruments</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <div class="logo-badge">
+        <img
+          class="logo"
+          src="images/ImpracticalInstruments-Logo-v1.png"
+          alt="Impractical Instruments Logo"
+        />
       </div>
-    </header>
-
-    <section id="work" class="card">
-      <h2>What we do</h2>
-      <ul>
-        <li>Thing #1 (outcome, not a feature)</li>
-        <li>Thing #2 (who it helps + why it matters)</li>
-        <li>Thing #3 (a concrete capability)</li>
-      </ul>
-    </section>
-
-    <section class="card">
-      <h2>Selected projects</h2>
-      <p>Two sentences + 3 bullets is plenty.</p>
-      <ul>
-        <li><strong>Project A:</strong> one-line description</li>
-        <li><strong>Project B:</strong> one-line description</li>
-        <li><strong>Project C:</strong> one-line description</li>
-      </ul>
-    </section>
-
-    <footer class="footer">
-      <p>© <span id="year"></span> Your Company • <a href="mailto:hello@yourdomain.com">hello@yourdomain.com</a></p>
-    </footer>
-  </main>
-
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
-</body>
+      <section class="badge">
+        <p>We (<a href="https://www.echomountain.net/news/echo-mountain-to-reopen-in-early-2026-under-new-ownership">Jessica</a> + <a href="https://www.linkedin.com/in/charlie-huguenard/">Charlie</a>) are making <a href="https://www.connectbeyondfestival.com/">The Community Garden</a></p>
+      </section>
+      <section class="grid">
+        <div class="card">
+          <img src="images/ii_geoteller.png" alt="Geoteller Instrument" />
+        </div>
+        <div class="card">
+          <img src="images/ii_lightboard.png" alt="Lightboard Instrument" />
+        </div>
+        <div class="card">
+          <img src="images/ii_pretztar.png" alt="Pretztar Instrument" />
+        </div>
+        <div class="card">
+          <img src="images/ii_theraphone.png" alt="Theraphone Instrument" />
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
