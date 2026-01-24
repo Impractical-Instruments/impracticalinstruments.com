@@ -60,18 +60,18 @@ a:focus {
 .page {
   min-height: 100vh;
   display: grid;
+  padding: 2rem 4rem 2rem;
   gap: 1rem;
   animation: fade-in 0.9s ease-out;
 }
 
 .logo-badge {
-  padding: 0.6rem 0.8rem;
   width: fit-content;
 }
 
 .logo {
   display: block;
-  width: clamp(120px, 18vw, 220px);
+  width: 128px;
   height: auto;
 }
 
@@ -80,29 +80,27 @@ a:focus {
   text-transform: uppercase;
   font-size: 1.25rem;
   color: var(--paper);
-  padding: 0.6rem 1rem;
   width: fit-content;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 0 2rem 0;
 }
 
 .grid {
   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  width: 100%;
 }
 
 .card {
-  padding: 1rem;
+  width: 100%;
   animation: rise 0.9s ease-out;
 }
 
 .card img {
-  display: block;
-  height: 300px;
-  width: auto;
-  max-width: 100%;
-  margin: 0 auto 1rem;
-  object-fit: contain;
+  display: block;     /* removes inline-img whitespace quirks */
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* or 'cover' if you want cropping instead of letterboxing */
 }
 
 @keyframes fade-in {
@@ -124,11 +122,5 @@ a:focus {
   to {
     opacity: 1;
     transform: translateY(0);
-  }
-}
-
-@media (max-width: 720px) {
-  .page {
-    padding: 4rem 8vw 3.5rem;
   }
 }
